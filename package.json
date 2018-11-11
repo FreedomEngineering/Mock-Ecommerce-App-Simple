@@ -1,0 +1,23 @@
+{
+  "name": "mock-ecommerce-app-simple",
+  "version": "1.0.0",
+  "description": "A simple mock E-commerce app",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreedomEngineering/Mock-Ecommerce-App-Simple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreedomEngineering/Mock-Ecommerce-App-Simple/issues"
+  },
+  "homepage": "https://github.com/FreedomEngineering/Mock-Ecommerce-App-Simple#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}
