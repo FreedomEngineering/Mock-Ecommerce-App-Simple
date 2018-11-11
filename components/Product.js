@@ -1,8 +1,17 @@
 import React from "react";
 
 import { formatPrice } from "../lib/utils";
+import { ModalButton } from "./Modal";
 
-const Product = ({ _id, name, images, shortDescription, price }) => (
+const Product = ({
+  id,
+  name,
+  images,
+  shortDescription,
+  longDescription,
+  price,
+  onModalClick
+}) => (
   <div className="card product">
     <div className="card-body">
       <img
@@ -16,6 +25,18 @@ const Product = ({ _id, name, images, shortDescription, price }) => (
         {`$${formatPrice(price)}`}
       </h6>
       <p className="card-text">{shortDescription}</p>
+      <ModalButton
+        onClick={() =>
+          onModalClick({
+            id,
+            name,
+            images,
+            shortDescription,
+            longDescription,
+            price
+          })
+        }
+      />
     </div>
   </div>
 );
