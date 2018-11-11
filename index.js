@@ -3,7 +3,14 @@ import ReactDOM from "react-dom";
 
 class App extends Component {
   render() {
-    return <h1 className="text-center">Hello World</h1>;
+    return (
+      <div>
+        <h1 id="welcomeBanner" className="blue">
+          Hello World
+        </h1>
+        <p className="blue">I am blue</p>
+      </div>
+    );
   }
 }
 
