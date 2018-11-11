@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { formatPrice } from "../lib/utils";
+import { formatPrice } from "../../../lib/utils";
 
 export const ModalButton = ({ onClick }) => (
   <button
@@ -33,9 +33,19 @@ export const Modal = ({
       <div className="modal-content">
         {!images ? null : (
           <Fragment>
+            <div className="modal-header">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <div id="productPage" className="container">
               <div className="row">
-                <div className="col mainImage">
+                <div className="col-xs-12 col-sm-6 mainImage">
                   <img
                     className="img-fluid shadow p-3 bg-white rounded"
                     src={images[0].src}

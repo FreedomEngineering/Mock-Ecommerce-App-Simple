@@ -4,7 +4,7 @@
   "description": "A simple mock E-commerce app",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --no-autoinstall",
+    "start": "parcel ./src/index.html --no-autoinstall",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf .cache && rm -rf dist"
   },

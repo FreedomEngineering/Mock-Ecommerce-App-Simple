@@ -1,6 +1,6 @@
 import React from "react";
 
-import { formatPrice } from "../lib/utils";
+import { formatPrice } from "../../../lib/utils";
 import { ModalButton } from "./Modal";
 
 const Product = ({

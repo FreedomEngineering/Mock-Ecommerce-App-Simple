@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 import Jumbotron from "./components/Jumbotron";
 import ProductsContainer from "./components/ProductsContainer";
@@ -15,10 +14,10 @@ class App extends Component {
     this.onModalClick = this.onModalClick.bind(this);
   }
   onModalClick(modalProps) {
-    console.log('clicked');
+    console.log("clicked");
     this.setState({
       modalProps
-    })
+    });
   }
 
   render() {
@@ -33,4 +32,4 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
