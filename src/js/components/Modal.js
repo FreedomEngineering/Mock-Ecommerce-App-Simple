@@ -51,34 +51,32 @@ export class Modal extends Component {
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div id="productPage" className="container">
-                  <div className="row">
-                    <div className="col-xs-12 col-sm-6 mainImage">
-                      <img
-                        className="img-fluid shadow p-3 bg-white rounded"
-                        src={images[0].src}
-                        alt={images[0].alt}
-                      />
-                    </div>
-                    <div className="col-xs-12 col-sm-6">
-                      <h1>{name}</h1>
-                      <h6 className="price">{`Price: $${formatPrice(
-                        price
-                      )}`}</h6>
-                      <hr />
-                      <h4 className="shortDescription">{shortDescription}</h4>
-                      <div className="form-row flex-container">
-                        <div className="col addToCart">
-                          <button
-                            type="button"
-                            className={`btn btn-${
-                              isItemInCart ? "warning" : "primary"
-                            } btn-lg`}
-                            onClick={() => handleCartButtonClick(id)}
-                          >
-                            {isItemInCart ? "Remove From Cart" : "Add To Cart"}
-                          </button>
-                        </div>
+                <div className="modal-body">
+                  <div id="productPage" className="container">
+                    <div className="row">
+                      <div className="col-xs-12 col-sm-6 mainImage">
+                        <img
+                          className="rounded mx-auto d-block p-3"
+                          src={images[0].src}
+                          alt={images[0].alt}
+                        />
+                      </div>
+                      <div className="col-xs-12 col-sm-6">
+                        <h1 id="productName">{name}</h1>
+                        <h6 className="price">{`Price: $${formatPrice(
+                          price
+                        )}`}</h6>
+                        <hr />
+                        <h4 className="shortDescription">{shortDescription}</h4>
+                        <button
+                          type="button"
+                          className={`btn-block mx-0 my-4 btn btn-${
+                            isItemInCart ? "warning" : "primary"
+                          } btn-lg`}
+                          onClick={() => handleCartButtonClick(id)}
+                        >
+                          {isItemInCart ? "Remove From Cart" : "Add To Cart"}
+                        </button>
                       </div>
                     </div>
                     <hr />
