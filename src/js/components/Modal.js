@@ -54,14 +54,14 @@ export class Modal extends Component {
                 <div className="modal-body">
                   <div id="productPage" className="container">
                     <div className="row">
-                      <div className="col-xs-12 col-sm-6 mainImage">
+                      <div className="col-md-12 col-lg-6 mainImage">
                         <img
                           className="rounded mx-auto d-block p-3"
                           src={images[0].src}
                           alt={images[0].alt}
                         />
                       </div>
-                      <div className="col-xs-12 col-sm-6">
+                      <div className="col-md-12 col-lg-6">
                         <h1 id="productName">{name}</h1>
                         <h6 className="price">{`Price: $${formatPrice(
                           price
@@ -81,7 +81,7 @@ export class Modal extends Component {
                     </div>
                     <hr />
                     <div className="row longDescription">
-                      <div className="col-xs-12">
+                      <div className="col">
                         <h3>Product Description</h3>
                         {longDescription.map(desc => (
                           <p key={desc.slice(0, 10)} className="text-justify">
