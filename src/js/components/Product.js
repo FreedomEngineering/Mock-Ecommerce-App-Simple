@@ -14,11 +14,7 @@ const Product = ({
 }) => (
   <div className="card product">
     <div className="card-body">
-      <img
-        className="shadow rounded img-thumbnail"
-        src={images[0].src}
-        alt={images[0].alt}
-      />
+      <img className="shadow rounded img-thumbnail" src={images[0].src} />
       <hr />
       <h5 className="card-title">{name}</h5>
       <h6 className="card-subtitle mb-2 text-muted">
